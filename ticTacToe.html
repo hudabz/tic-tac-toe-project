@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1  class="animated swing infinite">Tic Tac Toe </h1> 
+      <h3 id="turn"> </h3> 
+
+    <div class="build-xo" > 
+     <div class="row1"> 
+         <div id="00" class="column">  </div>
+         <div id="01" class="column">  </div>
+         <div id="02" class="column">  </div>
+     </div> 
+
+     <div class="row2"> 
+        <div id="10" class="column">  </div>
+        <div id="11" class="column">  </div>
+        <div id="12" class="column">  </div>
+     </div>
+
+     <div class="row3"> 
+        <div id="20" class="column">  </div>
+        <div id="21" class="column">  </div>
+        <div id="22" class="column">  </div>
+     </div>
+
+    </div> 
+          <button id ='remove'class="reset-button"> Start a new game</button>
+          <audio id ='myWinner'src="ta-da.mp3" type="audio/mpeg"></audio>
+
+     <!-- Scripts -->
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- linking to jQuery file -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="main.js"></script> <!-- linking to exercise file -->
+     <!-- End Scripts -->
+</body>
+</html>

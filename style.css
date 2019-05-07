@@ -1,0 +1,48 @@
+
+h1{
+    color: white; 
+    text-align: center;
+    font-size: 40px;
+} 
+h3{
+    color: white;
+    text-align: center;
+}
+.build-xo{
+    display:  table; 
+}
+
+.column{ 
+  float: left;
+  width: 150px;
+  border: 1px solid black;  
+  height: 100px; 
+  text-align: center;
+  margin: 5px; 
+  border-radius: 5px; 
+  align-items: baseline; 
+  background-color: white; 
+  font-size: 50px;
+  color: gray; 
+}  
+
+body{
+    background-image: url('tic-tac-toe-background.jpg'); 
+    padding: 0px;
+    margin: 0 auto ; 
+    width: 40%;
+} 
+
+.reset-button {
+    transform: translate(70%, 25%); 
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    background-color:  gray; 
+    padding: 15px; 
+    width: 200px;
+}
+#turn{
+    height: 20px;
+}
