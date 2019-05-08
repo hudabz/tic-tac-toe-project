@@ -70,13 +70,11 @@ function playTurn(){
       
         swal(currentPlayer+" is a winner!", "Hard luck for O next time", "success", 
           );
-          $('audio#myWinner')[0].play()
+          $('audio#myWinner')[0].play();
         } 
 
   if (count == 9) {
-      console.log('tie') 
     swal("It's a tie", {
-        // buttons:["No Thanks!", "Aww yiss!"], 
       }); 
   } 
 } 
