@@ -2,14 +2,22 @@
 h1{
     color: white; 
     text-align: center;
-    font-size: 40px;
+    font-size: 40px; 
+   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 } 
+.greatest {
+    color:black;
+    font-family: Papyrus, fantasy; 
+
+}
 h3{
     color: white;
     text-align: center;
 }
 .build-xo{
-    display:  table; 
+    padding-top: 8%;
+    display:  flex; 
+    justify-content: center;
 }
 
 .column{ 
@@ -21,28 +29,102 @@ h3{
   margin: 5px; 
   border-radius: 5px; 
   align-items: baseline; 
-  background-color: white; 
+  background-color: #f5f5f5; 
   font-size: 50px;
   color: gray; 
+  border: #f5f5f5;
 }  
 
 body{
-    background-image: url('tic-tac-toe-background.jpg'); 
     padding: 0px;
     margin: 0 auto ; 
     width: 40%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
 } 
 
+body.game{
+    background-image: url('wooden1.jpg');  
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
 .reset-button {
+    background-image: url('resetPutton.jpg'); 
     transform: translate(70%, 25%); 
     color: white;
     font-size: 20px;
     text-align: center;
     border-radius: 10px; 
-    background-color:  gray; 
+    border: black;
     padding: 15px; 
     width: 200px;
+    box-shadow: 10px 10px 8px #723d1d; 
+    opacity: 0.9%;
+    font-family: monaco, Consolas, "Lucida Console", monospace; 
 }
 #turn{
     height: 20px;
+    font-size: 20px; 
+    font-family: Papyrus, fantasy; 
 }
+.intro{
+    background-color: white; 
+    background-image: url('https://66.media.tumblr.com/c4a7e94f7ca0ff06fd3be8c1ff158633/tumblr_o70qfn5E661twkrf5o1_500.gif');
+    background-repeat: repeat-x; 
+   
+} 
+.start{ 
+    background-image: url('startPutton.jpg'); 
+    margin-top: 90%;
+    color: black;
+    font-weight: bold;
+    font-family: monaco, Consolas, "Lucida Console", monospace; 
+    text-decoration: none;
+    font-size: 25px; 
+    text-align: center; 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 10px 10px 8px #888888;
+
+} 
+footer {
+    margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+    margin-right: 20%;
+    
+}
+.madeBy { 
+    font-size: 25px; 
+    font-variant: small-caps; 
+    
+} 
+
+@media (max-width: 600px) {
+  
+    header {
+      width: 100%;
+      }
+    header img {
+      max-width : 100%;
+      height: auto;
+    } 
+    footer {
+        display: none; 
+       }  
+    .greatest {
+       font-size: 1.5em; 
+       
+    }
+    .start{ 
+        margin-top: 200%;
+        font-size: 1em; 
+        text-align: center; 
+        padding: 15px; 
+    } 
+    }

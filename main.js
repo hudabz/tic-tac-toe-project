@@ -1,4 +1,12 @@
 
+// let music = $('#relaxIntro')
+// if (music){
+//   music[0].play();
+// } else {
+
+
+
+
 let position =[ 
 ['00', '01', '02'], 
 ['10', '11', '12'], 
@@ -7,11 +15,11 @@ let position =[
 let winnerSound = $('#myWinner'); 
 let count = 0; 
 let currentPlayer ;
- swal("Choose X or O ", {
+ swal("Are you X or O player?  ", {
     content: "input",
   })
   .then((value) => {
-    swal(`First player is  : ${value}`)
+    swal(`Start with player  : ${value}`)
     currentPlayer = value;
   }); 
 
@@ -19,13 +27,12 @@ $('.column').click(playTurn);
 
 function playTurn(){ 
     count++; 
-   
-    if(currentPlayer === 'x') { 
+    if(currentPlayer === 'X') { 
       
     $(this).text(currentPlayer); 
     $(this).off("click"); 
-    currentPlayer ='o'; 
-    $("#turn").text("The turn is for "+currentPlayer)
+    currentPlayer ='O'; 
+    $("#turn").text("It's  "+currentPlayer+" turn")
 
     for (let i = 0; i <position.length ; i++) {
         for (let j =0; j <position.length ; j++) { 
@@ -37,11 +44,11 @@ function playTurn(){
       }    
     } 
 
- else if (currentPlayer === 'o') {
+ else if (currentPlayer === 'O') {
     $(this).text(currentPlayer);
     $(this).off("click"); 
-    currentPlayer ='x'; 
-    $("#turn").text("The turn is for "+currentPlayer)
+    currentPlayer ='X'; 
+    $("#turn").text("It's  "+currentPlayer+" turn")
     for (let i = 0; i <position.length ; i++) {
         for (let j =0; j <position.length ; j++) { 
     
@@ -61,19 +68,18 @@ function playTurn(){
     || position[0][2] ===  position[1][2] && position[1][2] === position[2][2] 
     || position[0][2] ===  position[1][1] && position[1][1] === position[2][0])
     {
-      if (currentPlayer=='x') {
-          currentPlayer='o'; 
+      if (currentPlayer=='X') {
+          currentPlayer='O'; 
           
       } else {
-          currentPlayer='x'
+          currentPlayer='X'
       } 
       
         swal(currentPlayer+" is a winner!", "Hard luck for O next time", "success", 
           );
           $('audio#myWinner')[0].play();
         } 
-
-  if (count == 9) {
+      else if (count == 9) {
     swal("It's a tie", {
       }); 
   } 
@@ -92,12 +98,15 @@ $('#remove').click(playAgain);
     ['20', '21', '22'] 
     ]; 
 
-    swal("Choose X or O ", {
-        content: "input",
-      })
-      .then((value) => {
-        swal(`First player is  : ${value}`)
-        currentPlayer = value;
-      });  
+    swal("Are you X or O player?  ", {
+      content: "input",
+    })
+    .then((value) => {
+      swal(`Start with player  : ${value}`)
+      currentPlayer = value;
+    }); 
   
- }
+ } 
+
+
+  
