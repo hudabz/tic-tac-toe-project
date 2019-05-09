@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,44 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> -->
     <link rel="stylesheet" href="style.css">
-
 </head>
-<body class="game">
-    <h1  class="animated swing infinite">Tic Tac Toe </h1> 
-      <h3 id="turn"> </h3> 
+<body class="intro"> 
+    <header> 
+            <h1 class="greatest"> The Greatest "Tic Tac Toe"</h1>
+    </header> 
+    <!-- <iframe src="https://s3-eu-west-1.amazonaws.com/omegasquadron.neilbryson.net/silence.mp3" id="audio" allow="autoplay" style="display:none"></iframe> -->
+    <audio id='relaxIntro' autoplay="autoplay" loop>
+        <source src="relax.mp3" type="audio/mp3">   </source> 
+    </audio>
 
-    <div class="build-xo" > 
-     <div class="row1"> 
-         <div id="00" class="column">  </div>
-         <div id="01" class="column">  </div>
-         <div id="02" class="column">  </div>
-     </div> 
-
-     <div class="row2"> 
-        <div id="10" class="column">  </div>
-        <div id="11" class="column">  </div>
-        <div id="12" class="column">  </div>
-     </div>
-
-     <div class="row3"> 
-        <div id="20" class="column">  </div>
-        <div id="21" class="column">  </div>
-        <div id="22" class="column">  </div>
-     </div>
-
-    </div> 
-          <button id ='remove'class="reset-button"> New Game</button>
-          <audio id ='myWinner'src="cheer.mp3" type="audio/mpeg"></audio>
-
+    <a class='start' href="game.html"> Start Playing</a>
+    
+     <footer> 
+      <p class="madeBy">  Made By Huda Binzaqr</p>
+       <p> © 2019 Tic Tac Toe, KSA</p>
+   </footer>
      <!-- Scripts -->
      <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- linking to jQuery file -->
-     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-     <script src="main.js"></script> <!-- linking to exercise file -->
-     <!-- End Scripts --> 
-     <footer> 
-         <p> © 2019 Tic Tac Toe, KSA</p>
-     </footer>
+     <!-- <script src="main.js"></script> linking to exercise file -->
+     <!-- End Scripts -->
 </body>
 </html>
